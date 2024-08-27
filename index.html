@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto - Debora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/Logo.png" alt="Logo alura">
+    </header>
+    <main class="corpo">
+        <section class="inserir">
+            <div class="inserir__titulo">
+                <textarea id="textoEntrada" type="text" placeholder="Digite o texto"></textarea>
+            </div>
+            <section class="inserir__botoes">
+                <p class="inserir__botoes__obs"><img src="./assets/bi_exclamation-circle-fill.png" alt="Simbolo de atenção" class="inserir__obs__img">Apenas letras minúsculas e sem acento.</p>
+                <button onclick="converterTexto()" class="inserir__botoes__1">Criptografar</button>
+                <button onclick="descriptografarTexto()" class="inserir__botoes__2">Descriptografar</button>
+            </section>
+        </section>
+            <div class="resultado">
+                <p id="textoConvertido" class="resultado_conversao"></p>
+                <img id="imagem_div" class="resultado__imagem" src="./assets/vazio.png" alt="Menino com uma lupa">
+                <h1 id="div_titulo" class="resultado__titulo">Nenhuma mensagem encontrada</h1>
+                <p id="div_texto" class="resultado__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button onclick="copiarTexto()" id="Copiar" class="resultado__copiar">Copiar</button>
+            </div>
+    </main>
+    <script src="app.js" defer></script>
+    <footer>Created by Débora Rossini</footer>
+</body>
+</html>
