@@ -10,6 +10,10 @@
     --fonte: "Inter", sans-serif;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     gap: 5rem;
     background-color: var(--cor-primaria);
